@@ -90,9 +90,11 @@ def display_shopping_list(lists_by_name, list_name):
       None
     """
 
-    # your code here! 
-    pass
-
+    if list_name in lists_by_name:
+        for items in lists_by_name[list_name]:
+            print items
+    else:
+        print "This list doesn't exist."
 
 def show_all_lists(lists_by_name):
     """Given a dictionary of shopping lists, print out each list.
