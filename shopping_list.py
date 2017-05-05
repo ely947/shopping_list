@@ -38,8 +38,10 @@ def remove_shopping_list(lists_by_name, list_name_to_remove):
       None
     """
 
-    # your code here! 
-    pass
+    if list_name_to_remove in lists_by_name:
+        del lists_by_name[list_name_to_remove]
+    else:
+        print "That list does not exist"
 
 
 def add_to_shopping_list(lists_by_name, list_name, items):
