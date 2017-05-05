@@ -20,9 +20,9 @@ def add_new_shopping_list(lists_by_name, new_list_name):
     Returns:
       None
     """
+    lists_by_name[new_list_name] = []
 
-    # your code here! 
-    pass
+    
 
 
 def remove_shopping_list(lists_by_name, list_name_to_remove):
